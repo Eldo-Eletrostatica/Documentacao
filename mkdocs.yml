@@ -32,6 +32,7 @@ theme:
 
 nav:
   - Início: index.md
+  - Requisitos: historias_usuários.md
 
 markdown_extensions:
   - admonition
