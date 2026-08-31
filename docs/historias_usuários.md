@@ -53,3 +53,19 @@
 **US19** - Como cliente pessoa jurídica, quero consultar o status do meu serviço em andamento, para acompanhar o progresso sem precisar entrar em contato diretamente.
 
 **US20** - Como gestor, quero visualizar prazos e serviços atrasados em um painel único, para priorizar ações corretivas e cumprir os compromissos com os clientes.
+
+## Épico 8: Lançamento de Vendas
+
+**US21** - Como funcionário comercial, quero registrar o lançamento de uma venda vinculada a um orçamento aprovado (ou a um novo cliente), para formalizar o fechamento do negócio e disparar o acompanhamento do serviço.
+
+**US22** - Como administrador, quero configurar as regras de comissão (percentual ou valor fixo, por funcionário, tipo de serviço ou faixa de valor), para que o cálculo seja automático e consistente com a política comercial.
+
+**US23** - Como funcionário comercial, quero visualizar minhas comissões acumuladas por período, para acompanhar meu desempenho e meus ganhos.
+
+**US24** - Como gestor/financeiro, quero visualizar e exportar relatórios de comissões por funcionário e um ranking de vendas por período, para processar pagamentos e apoiar decisões de incentivo.
+
+## Épico 9: Edição Visual do Site
+
+**US25** - Como administrador, quero personalizar a identidade visual do site (cores do tema, logotipo e imagens de destaque/banners, mantendo fixas as posições do layout), para adequar a aparência do site à marca da empresa.
+
+**US26** - Como administrador, quero pré-visualizar as alterações visuais antes de publicá-las e poder restaurar a configuração padrão a qualquer momento, para aplicar mudanças com segurança e reverter erros rapidamente.
