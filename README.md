@@ -1,6 +1,6 @@
 # Documentacao
 
-Documentação do projeto Eudo Eletrostática, gerada com [MkDocs](https://www.mkdocs.org/) + tema [Material](https://squidfunk.github.io/mkdocs-material/).
+Documentação do projeto Eldo Eletrostática, gerada com [MkDocs](https://www.mkdocs.org/) + tema [Material](https://squidfunk.github.io/mkdocs-material/).
 
 ## Setup
 

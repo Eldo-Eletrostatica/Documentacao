@@ -1,4 +1,4 @@
-# User Stories – Eudo Eletrostática
+# User Stories – Eldo Eletrostática
 
 ## Épico 1: Vitrine e Portfólio
 
