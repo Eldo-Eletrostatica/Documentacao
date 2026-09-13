@@ -1,5 +1,7 @@
 # User Stories – Eldo Eletrostática
 
+> Ao transformar uma US em Issue no GitHub Projects, adicione critérios de aceite seguindo o padrão descrito em [Critérios de Aceite](processo/criterios-aceite.md). Veja também o [Quadro Kanban](processo/quadro-kanban.md) e as checklists de [Definition of Ready / Done](processo/dor-dod.md).
+
 ## Épico 1: Vitrine e Portfólio
 
 **US01** - Como visitante do site, quero visualizar uma galeria de serviços de pintura eletrostática já realizados, para avaliar a qualidade do trabalho da empresa antes de contratar.
