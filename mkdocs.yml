@@ -1,7 +1,7 @@
-site_name: Eudo Eletrostática
-site_description: Documentação do projeto Eudo Eletrostática
-repo_url: https://github.com/Eudo-Eletrostatica/Documentacao
-repo_name: Eudo-Eletrostatica/Documentacao
+site_name: Eldo Eletrostática
+site_description: Documentação do projeto Eldo Eletrostática
+repo_url: https://github.com/Eldo-Eletrostatica/Documentacao
+repo_name: Eldo-Eletrostatica/Documentacao
 
 theme:
   name: material
@@ -33,6 +33,10 @@ theme:
 nav:
   - Início: index.md
   - Requisitos: historias_usuários.md
+  - Processo:
+      - Quadro Kanban: processo/quadro-kanban.md
+      - Critérios de Aceite: processo/criterios-aceite.md
+      - Definition of Ready / Done: processo/dor-dod.md
 
 markdown_extensions:
   - admonition
