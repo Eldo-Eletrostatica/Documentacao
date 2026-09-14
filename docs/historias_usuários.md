@@ -64,7 +64,7 @@
 
 **US23** - Como funcionário comercial, quero visualizar minhas comissões acumuladas por período, para acompanhar meu desempenho e meus ganhos.
 
-**US24** - Como gestor/financeiro, quero visualizar e exportar relatórios de comissões por funcionário e um ranking de vendas por período, para processar pagamentos e apoiar decisões de incentivo.
+**US24** - Como gestor/financeiro, quero visualizar e exportar relatórios diversos sobre o negócio para processar pagamentos e apoiar decisões de incentivo.
 
 ## Épico 9: Edição Visual do Site
 
