@@ -36,7 +36,6 @@ nav:
   - Processo:
       - Quadro Kanban: processo/quadro-kanban.md
       - Critérios de Aceite: processo/criterios-aceite.md
-      - Definition of Ready / Done: processo/dor-dod.md
 
 markdown_extensions:
   - admonition

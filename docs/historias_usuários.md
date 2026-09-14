@@ -1,6 +1,6 @@
 # User Stories – Eldo Eletrostática
 
-> Ao transformar uma US em Issue no GitHub Projects, adicione critérios de aceite seguindo o padrão descrito em [Critérios de Aceite](processo/criterios-aceite.md). Veja também o [Quadro Kanban](processo/quadro-kanban.md) e as checklists de [Definition of Ready / Done](processo/dor-dod.md).
+> Ao transformar uma US em Issue no GitHub Projects, adicione critérios de aceite seguindo o padrão descrito em [Critérios de Aceite](processo/criterios-aceite.md). Veja também o [Quadro Kanban](processo/quadro-kanban.md).
 
 ## Épico 1: Vitrine e Portfólio
 

@@ -6,20 +6,17 @@ Este projeto usa o **GitHub Projects** (a versão atual, conhecida como *Project
 
 Times pequenos com um backlog relativamente estável (como é o caso aqui, com 26 USs já mapeadas em 9 épicos) costumam se sair melhor com um **fluxo contínuo (Kanban)** do que com Sprints fechadas de Scrum — não há a sobrecarga de cerimônias (planning, sprint review, etc.), mas ainda se mantém disciplina de processo através de "portões" de qualidade nas transições entre colunas.
 
-Esse modelo combina duas referências clássicas:
-
-- **Kanban** (Anderson, *Kanban: Successful Evolutionary Change for Your Technology Business*, 2010) — fluxo visual, limite de trabalho em progresso (WIP) e "puxar" itens em vez de "empurrar".
-- **Definition of Ready / Definition of Done** (prática comum em Scrum, descrita por Rubin em *Essential Scrum* e por Pichler em *Agile Product Management with Scrum*) — critérios objetivos para um item entrar e sair de cada fase.
+Esse modelo se baseia em **Kanban** (Anderson, *Kanban: Successful Evolutionary Change for Your Technology Business*, 2010) — fluxo visual, limite de trabalho em progresso (WIP) e "puxar" itens em vez de "empurrar".
 
 ### Colunas do quadro
 
 | Coluna (Status) | Significado | Portão de entrada |
 | --- | --- | --- |
 | **Backlog** | US identificada, ainda não refinada | — |
-| **Ready** | Pronta para ser desenvolvida | passou pelo [Definition of Ready](dor-dod.md#definition-of-ready-dor) |
+| **Ready** | Pronta para ser desenvolvida | US refinada e com suas dependências cobertas  |
 | **Em andamento** | Alguém está trabalhando nela agora | foi puxada por um membro do time |
 | **Em revisão** | Code review / QA / validação dos critérios de aceite | PR aberto vinculado à issue |
-| **Concluído** | Feito e validado | passou pelo [Definition of Done](dor-dod.md#definition-of-done-dod) |
+| **Concluído** | Feito e validado | testes passando e cliente validou |
 
 ## Onde uma US mora: sempre centralizada na `Documentacao`
 
@@ -42,8 +39,3 @@ Para cada User Story, ao abrir a issue na `Documentacao`:
 - Label: o épico correspondente (ex.: `epico:vitrine-portfolio`)
 
 Depois, crie e conecte as sub-issues técnicas em `Frontend`/`Backend` conforme descrito acima — essas só precisam do escopo daquele repo, sem repetir a história completa.
-
-## Acompanhamento
-
-- Antes de mover um item de **Backlog** para **Ready**, confira o [Definition of Ready](dor-dod.md#definition-of-ready-dor).
-- Antes de mover um item de **Em revisão** para **Concluído**, confira o [Definition of Done](dor-dod.md#definition-of-done-dod).
