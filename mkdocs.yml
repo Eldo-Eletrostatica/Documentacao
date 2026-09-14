@@ -32,6 +32,7 @@ theme:
 
 nav:
   - Início: index.md
+  - Stack: stack.md
   - Requisitos: historias_usuários.md
   - Processo:
       - Quadro Kanban: processo/quadro-kanban.md
@@ -41,5 +42,10 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - toc:
       permalink: true
