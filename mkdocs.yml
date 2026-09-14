@@ -33,6 +33,7 @@ theme:
 nav:
   - Início: index.md
   - Stack: stack.md
+  - Prototipação: prototipacao.md
   - Requisitos: historias_usuários.md
   - Processo:
       - Quadro Kanban: processo/quadro-kanban.md

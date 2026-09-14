@@ -39,6 +39,7 @@ Frontend e Backend vivem em repositórios separados, comunicando-se via API REST
 ## Navegação
 
 - [Stack Tecnológica](stack.md) — as tecnologias usadas no projeto.
+- [Prototipação](prototipacao.md) — protótipos de interface no Figma.
 - [Requisitos (User Stories)](historias_usuários.md) — épicos e histórias de usuário do projeto.
 - **Processo**:
     - [Quadro Kanban](processo/quadro-kanban.md) — como o backlog é organizado no GitHub Projects.
