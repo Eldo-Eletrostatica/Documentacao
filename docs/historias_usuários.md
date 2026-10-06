@@ -10,11 +10,13 @@
 
 **US03** - Como visitante do site, quero acessar uma área de divulgação de ações e eventos em que a empresa participou, para conhecer o histórico e a credibilidade da marca no mercado.
 
+**US27** - Como administrador, quero adicionar, editar e remover as categorias e projetos do portfólio, além dos eventos divulgados no site, para manter a vitrine sempre atualizada sem depender da equipe de desenvolvimento.
+
 ## Épico 2: Feedback de Clientes
 
-**US04** - Como cliente que já utilizou os serviços, quero deixar uma avaliação e comentário sobre minha experiência, para compartilhar minha satisfação com outros potenciais clientes.
+> **US04 descontinuada** (validação com cliente, 2026-09-16): a equipe decidiu manter somente a integração com as avaliações do Google, sem formulário próprio de avaliação no site. A US05 abaixo foi reescrita para refletir isso.
 
-**US05** - Como visitante do site, quero visualizar os depoimentos e avaliações de outros clientes, para ter mais confiança na hora de decidir pela contratação.
+**US05** - Como visitante do site, quero visualizar as avaliações do Google da empresa exibidas no site, para ter mais confiança na hora de decidir pela contratação.
 
 ## Épico 3: Contato - Pessoa Física
 
