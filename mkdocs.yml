@@ -38,6 +38,7 @@ nav:
   - Processo:
       - Quadro Kanban: processo/quadro-kanban.md
       - Critérios de Aceite: processo/criterios-aceite.md
+      - Como contribuir: processo/como-contribuir.md
 
 exclude_docs: |
   agents/
@@ -46,6 +47,9 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.snippets:
+      base_path: ["."]
+      check_paths: true
   - attr_list
   - md_in_html
   - pymdownx.emoji:
