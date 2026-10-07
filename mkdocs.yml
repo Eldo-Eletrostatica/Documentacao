@@ -39,6 +39,9 @@ nav:
       - Quadro Kanban: processo/quadro-kanban.md
       - Critérios de Aceite: processo/criterios-aceite.md
 
+exclude_docs: |
+  agents/
+
 markdown_extensions:
   - admonition
   - pymdownx.details
