@@ -50,7 +50,7 @@
 
 ## Épico 7: Acompanhamento de Serviços
 
-**US17** - Como funcionário, quero cadastrar um novo serviço/projeto com dados do cliente, escopo e prazo, para iniciar o acompanhamento do trabalho.
+**US17** - Como funcionário, quero registrar o escopo e o prazo do serviço no lançamento da venda, gerando a ordem de serviço, para iniciar o acompanhamento do trabalho.
 
 **US18** - Como funcionário, quero atualizar o status do serviço (em fila, em produção, em finalização, concluído), para manter o andamento sempre visível à equipe.
 
