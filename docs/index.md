@@ -44,3 +44,4 @@ Frontend e Backend vivem em repositórios separados, comunicando-se via API REST
 - **Processo**:
     - [Quadro Kanban](processo/quadro-kanban.md) — como o backlog é organizado no GitHub Projects.
     - [Critérios de Aceite](processo/criterios-aceite.md) — como transformar uma US em condições testáveis.
+    - [Como contribuir](processo/como-contribuir.md) — fluxo de trabalho com agentes de IA e instalação das skills.
