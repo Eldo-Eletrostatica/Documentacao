@@ -35,6 +35,7 @@ nav:
   - Stack: stack.md
   - Prototipação: prototipacao.md
   - Requisitos: historias_usuários.md
+  - Modelo de dados: modelo-de-dados.md
   - Processo:
       - Quadro Kanban: processo/quadro-kanban.md
       - Critérios de Aceite: processo/criterios-aceite.md
