@@ -1,6 +1,6 @@
 # Exclusão lógica só onde há histórico
 
-As tabelas que o histórico referencia usam exclusão lógica (`deleted_at`): `employees`, `customers`, `paint_types`, `part_materials`, `commission_rules`, `suppliers`, `inventory_categories` e `inventory_items`. Um registro excluído some das telas, mas OS, orçamentos e movimentações antigas continuam apontando para ele. As demais tabelas apagam de verdade, para não acumular registros que nada referencia.
+As tabelas que o histórico referencia usam exclusão lógica (`deleted_at`): `employees`, `customers`, `catalog_items` e `inventory_items`. Um registro excluído some das telas, mas pedidos e movimentações antigas continuam apontando para ele. As demais tabelas apagam de verdade, para não acumular registros que nada referencia.
 
 ## Considered Options
 
