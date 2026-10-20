@@ -36,6 +36,13 @@ nav:
   - Prototipação: prototipacao.md
   - Requisitos: historias_usuários.md
   - Modelo de dados: modelo-de-dados.md
+  - Decisões (ADRs):
+      - 0001 Chaves UUID e protocolo aleatório: adr/0001-chaves-uuid-e-protocolo-aleatorio.md
+      - 0002 Exclusão lógica seletiva: adr/0002-exclusao-logica-seletiva.md
+      - 0003 Preços e comissões congelados: adr/0003-precos-e-comissoes-congelados.md
+      - 0004 Venda e OS no mesmo registro: adr/0004-venda-e-os-no-mesmo-registro.md
+      - 0005 Modelo enxuto de 9 tabelas: adr/0005-modelo-enxuto-de-nove-tabelas.md
+      - 0006 Armazenamento de arquivos: adr/0006-armazenamento-seaweedfs-e-r2.md
   - Processo:
       - Quadro Kanban: processo/quadro-kanban.md
       - Critérios de Aceite: processo/criterios-aceite.md
