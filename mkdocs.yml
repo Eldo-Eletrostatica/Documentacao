@@ -43,6 +43,7 @@ nav:
       - 0004 Venda e OS no mesmo registro: adr/0004-venda-e-os-no-mesmo-registro.md
       - 0005 Modelo enxuto de 9 tabelas: adr/0005-modelo-enxuto-de-nove-tabelas.md
       - 0006 Armazenamento de arquivos: adr/0006-armazenamento-seaweedfs-e-r2.md
+      - 0007 Autenticação por cookie: adr/0007-autenticacao-por-cookie.md
   - Processo:
       - Quadro Kanban: processo/quadro-kanban.md
       - Critérios de Aceite: processo/criterios-aceite.md
