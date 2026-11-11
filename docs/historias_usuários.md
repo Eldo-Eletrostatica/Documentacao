@@ -62,7 +62,7 @@
 
 **US21** - Como funcionário, quero registrar o lançamento de uma venda vinculada a um orçamento aprovado (ou a um novo cliente), para formalizar o fechamento do negócio e disparar o acompanhamento do serviço.
 
-**US22** - Como administrador, quero configurar as regras de comissão (percentual ou valor fixo, por funcionário ou por faixa de valor da venda), para que o cálculo seja automático e consistente com a política comercial.
+**US22** - Como administrador, quero configurar a regra de comissão de cada funcionário (percentual ou valor fixo), para que o cálculo seja automático e consistente com a política comercial.
 
 **US23** - Como funcionário, quero visualizar minhas comissões acumuladas por período, para acompanhar meu desempenho e meus ganhos.
 
