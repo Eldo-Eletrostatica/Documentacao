@@ -1,5 +1,7 @@
 # Modelo enxuto de nove tabelas
 
+> A categoria do estoque em texto, descrita abaixo, foi substituída pela ADR 0008, que a leva para uma tabela. O banco passou a ter 10 tabelas.
+
 O banco tem 9 tabelas de domínio: `employees`, `customers`, `orders`, `order_items`, `catalog_items`, `inventory_items`, `stock_movements`, `showcase_items` e `site_settings`. O primeiro modelo tinha 17 tabelas, grande demais para o escopo do projeto. Para chegar a 9, juntamos tabelas que guardavam etapas ou variações do mesmo conceito, sem sair da 3ª forma normal:
 
 - **Pedido único (`orders`):** solicitação de contato, orçamento, venda e OS são etapas do mesmo registro, controladas pelo `status`. As colunas de cada etapa aceitam nulo, e um CHECK exige os dados da venda (vendedor, valor, comissão, protocolo, escopo e prazo) a partir do status `queued`. O pedido de contato do cliente PF tem origem `contact`, e esse cliente pode ficar sem CPF.
