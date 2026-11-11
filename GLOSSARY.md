@@ -125,7 +125,7 @@ Tinta, insumo ou material controlado no estoque, com saldo, estoque mínimo, uni
 _Avoid_: product, stock item
 
 **InventoryCategory** (categoria de estoque):
-Texto que agrupa itens de estoque (ex.: tintas, insumos), digitado no cadastro do item.
+Grupo de itens de estoque (ex.: tintas, insumos), cadastrado pelo administrador. O item escolhe a categoria numa lista; se o administrador a remove, o item continua mostrando o nome dela.
 _Avoid_: category (sozinho, confunde com a categoria do portfólio)
 
 **StockMovement** (movimentação de estoque):
