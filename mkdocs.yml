@@ -45,6 +45,9 @@ nav:
       - 0006 Armazenamento de arquivos: adr/0006-armazenamento-seaweedfs-e-r2.md
       - 0007 Autenticação por cookie: adr/0007-autenticacao-por-cookie.md
       - 0008 Categorias de estoque em tabela: adr/0008-categorias-de-estoque-em-tabela.md
+  - Deploy:
+      - Hospedagem e custos: deploy/hospedagem-e-custos.md
+      - Testes de carga: deploy/testes-de-carga.md
   - Processo:
       - Quadro Kanban: processo/quadro-kanban.md
       - Critérios de Aceite: processo/criterios-aceite.md
