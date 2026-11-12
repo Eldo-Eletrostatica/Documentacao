@@ -65,14 +65,14 @@ As contas foram criadas com um e-mail que será entregue ao cliente. Esse e-mail
 
 ## Plano grátis do Render
 
-Serve para demonstração, não para produção:
+Serve para testes, não para a Eldo usar no dia a dia:
 
 - um web service Free dorme depois de 15 minutos sem acesso, e o primeiro acesso seguinte leva cerca de 1 minuto;
 - o PostgreSQL Free expira 30 dias depois de criado, com mais 14 dias para passar a um plano pago antes de os dados serem apagados;
 - um web service Free não envia nas portas 25, 465 e 587, as do SMTP, então os avisos por e-mail não saem;
 - private service não tem instância Free, e um web service Free não recebe tráfego da rede privada.
 
-A demonstração roda no plano grátis, descrita no `render.yaml` do Backend: um Blueprint que cria a API, o site e o banco de uma vez (ver a seção "Deploy no Render" do [README do Backend](https://github.com/Eldo-Eletrostatica/Backend#deploy-no-render)). Nela, o Backend sobe como web service Free, público, e a `API_URL` do Frontend aponta para o endereço público dele. Os avisos por e-mail, o upload de imagens e o orçamento por PDF não funcionam, e as avaliações do Google são de exemplo. Depois que o cartão for cadastrado, o Backend passa para um private service novo (o Render não converte um web service em private service), a `API_URL` muda para o endereço interno e o Frontend é gerado de novo, porque a `API_URL` entra no build. Guardar as variáveis do Backend num Environment Group evita digitá-las de novo.
+Por isso o deploy foi direto para os planos pagos, descritos no `render.yaml` do Backend: um Blueprint que cria a API, o site e o banco de uma vez (ver a seção "Deploy no Render" do [README do Backend](https://github.com/Eldo-Eletrostatica/Backend#deploy-no-render)). O site acha a API pela `API_HOSTPORT`, o endereço dela na rede privada, que o próprio Render preenche quando cria a API.
 
 ## Variáveis de produção
 
@@ -91,6 +91,7 @@ No Frontend, a `API_URL`, a `STORAGE_PUBLIC_URL` e a `NEXT_PUBLIC_TURNSTILE_SITE
 O Render constrói o último estágio do `Dockerfile` e não aceita `--target`. No Backend, o `prod` passou a ser o último estágio, e o `docker-compose.yml` escolhe o `dev` pelo nome. No Frontend, o `prod` já era o último.
 
 - **IP do visitante atrás do Render.** No Render, o Frontend fica atrás de um balanceador. Se o proxy do Next acrescentar ao `X-Forwarded-For` o IP do balanceador, e não o do visitante, todos os visitantes contam como um IP só, e o site inteiro fica limitado a 5 contatos por hora e 20 falhas de login por minuto. Conferir nos logs do primeiro deploy.
+- **Cartão no Google Cloud.** O cartão virtual da Eldo foi recusado na conta de faturamento do Google. Até a chave existir, a página inicial avisa que as avaliações estão indisponíveis; as avaliações de exemplo ficam só no desenvolvimento, para o visitante não ler depoimentos inventados.
 - **Consultas ao Google.** O serviço de avaliações não guarda as respostas do Google, então cada acesso pode virar uma consulta paga depois das 1.000 grátis. Medir antes de ligar a cobrança (Backend#65).
 - **Dados que dependem do cliente:** CNPJ e cartão para o Google Cloud e o R2, e-mail oficial para o SMTP e os avisos, domínio próprio, se houver.
 
