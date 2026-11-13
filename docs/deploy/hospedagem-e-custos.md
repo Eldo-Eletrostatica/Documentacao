@@ -74,6 +74,21 @@ Serve para testes, não para a Eldo usar no dia a dia:
 
 Por isso o deploy foi direto para os planos pagos, descritos no `render.yaml` do Backend: um Blueprint que cria a API, o site e o banco de uma vez (ver a seção "Deploy no Render" do [README do Backend](https://github.com/Eldo-Eletrostatica/Backend#deploy-no-render)). O site acha a API pela `API_HOSTPORT`, o endereço dela na rede privada, que o próprio Render preenche quando cria a API.
 
+## Homologação
+
+Antes de chegar à produção, toda mudança passa pela homologação (ver [ADR 0009](../adr/0009-homologacao-antes-da-producao.md)). A `main` é publicada lá, e a produção publica a branch `producao`, que recebe a `main` por PR depois que alguém do grupo valida a mudança.
+
+| Peça | Onde | US$/mês |
+| --- | --- | --- |
+| Site e API | Render, instâncias Free (`render.homolog.yaml` do Backend) | 0,00 |
+| PostgreSQL | Neon, plano grátis, projeto `eldo-homolog` na região AWS us-east-1 | 0,00 |
+| Imagens e PDFs | Cloudflare R2, bucket `eldo-homolog` | 0,00 |
+| CAPTCHA | O mesmo widget do Turnstile, com o hostname da homologação | 0,00 |
+
+O banco fica no Neon porque o PostgreSQL grátis do Render expira em 30 dias, e o do Neon não: o plano grátis tem 1 GB e 100 horas de computação por mês, e o banco suspende depois de 5 minutos sem uso. Como o Neon fica fora da rede privada do Render, a API conecta com SSL (`DB_SSL=true`).
+
+Valem os limites do plano grátis do Render descritos acima: o site e a API dormem, a API fica pública e os avisos por e-mail não saem. A suíte Selenium roda só na homologação, com o `E2E_CAPTCHA_TOKEN`, que não existe na produção.
+
 ## Variáveis de produção
 
 As listas completas estão nos READMEs do [Backend](https://github.com/Eldo-Eletrostatica/Backend#imagem-de-produção) e do [Frontend](https://github.com/Eldo-Eletrostatica/Frontend#imagem-de-produção). Desde o Backend#67, com `NODE_ENV=production`, a API se recusa a subir quando:
@@ -108,3 +123,4 @@ O Render constrói o último estágio do `Dockerfile` e não aceita `--target`. 
 - [Cloudflare R2: preços](https://developers.cloudflare.com/r2/pricing/)
 - [Cloudflare Turnstile: hostnames](https://developers.cloudflare.com/turnstile/concepts/hostname-management/)
 - [Google Maps Platform: preços](https://developers.google.com/maps/billing-and-pricing/pricing)
+- [Neon: preços](https://neon.com/pricing)
