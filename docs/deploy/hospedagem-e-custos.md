@@ -76,7 +76,7 @@ Por isso o deploy foi direto para os planos pagos, descritos no `render.yaml` do
 
 ## Homologação
 
-Antes de chegar à produção, toda mudança passa pela homologação (ver [ADR 0009](../adr/0009-homologacao-antes-da-producao.md)). A `main` é publicada lá, e a produção publica a branch `producao`, que recebe a `main` por PR depois que alguém do grupo valida a mudança.
+Antes de chegar à produção, toda mudança passa pela homologação (ver [ADR 0009](../adr/0009-homologacao-antes-da-producao.md)). A `main` é publicada lá, e a produção publica a branch `producao`, que recebe a `main` por PR depois que alguém do grupo valida a mudança. O caminho completo de um commit está em [Pipeline de deploy e testes](pipeline.md).
 
 | Peça | Onde | US$/mês |
 | --- | --- | --- |

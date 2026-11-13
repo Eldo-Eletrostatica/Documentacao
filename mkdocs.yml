@@ -47,6 +47,7 @@ nav:
       - 0008 Categorias de estoque em tabela: adr/0008-categorias-de-estoque-em-tabela.md
       - 0009 Homologação antes da produção: adr/0009-homologacao-antes-da-producao.md
   - Deploy:
+      - Pipeline: deploy/pipeline.md
       - Hospedagem e custos: deploy/hospedagem-e-custos.md
       - Testes de carga: deploy/testes-de-carga.md
   - Testes de ponta a ponta:
