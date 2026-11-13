@@ -80,7 +80,7 @@ O fluxo `fumaca` roda um teste de cada fluxo e leva poucos minutos:
     node --env-file=../homolog-e2e.env e2e/run.js fumaca
     ```
 
-O GitHub Actions roda esse fluxo sem tela depois de cada commit na `main`, assim que o Render publica o commit na homologação. Se falhar, a mudança não deve ser promovida para a `producao`. Outros fluxos rodam por **Actions → Selenium na homologação → Run workflow**.
+O GitHub Actions roda esse fluxo sem tela depois de cada commit na `main`, assim que o Render publica o commit na homologação. Se falhar, a mudança não deve ser promovida para a `producao`. Outros fluxos rodam por **Actions → Selenium na homologação → Run workflow**. Onde essa etapa entra no caminho até a produção está em [Pipeline de deploy e testes](../deploy/pipeline.md).
 
 ## Ajustes da execução
 
