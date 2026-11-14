@@ -6,18 +6,7 @@ Os valores e as regras abaixo foram conferidos em 11/11/2026. Preços e limites 
 
 ## Arquitetura
 
-```text
-navegador ──HTTPS──> Frontend (web service, público)
-                        │  /api/* repassado pelo proxy do Next (ADR 0007)
-                        │  páginas do servidor buscam direto pela API_URL
-                        ▼
-                     Backend (private service, sem acesso pela internet)
-                        ├──> PostgreSQL (Render)
-                        ├──> Cloudflare R2: imagens e PDFs (ADR 0006)
-                        ├──> Cloudflare Turnstile: validação do CAPTCHA
-                        ├──> SMTP: avisos de contato e orçamento (US28)
-                        └──> Google Places: avaliações (US05)
-```
+![Arquitetura de hospedagem: o navegador acessa só o Frontend, que repassa /api ao Backend na rede privada do Render; o Backend usa o PostgreSQL do Render e os serviços externos Cloudflare R2, Cloudflare Turnstile, SMTP e Google Places](../assets/arquitetura-de-hospedagem.png)
 
 O Backend fica como **private service**, que só recebe tráfego da rede privada do Render. O navegador nunca fala com ele: tudo passa pelo proxy `/api` do Frontend. Além de esconder a API da internet, isso é exigido pelo limite de envios por IP, que lê o IP do visitante no `X-Forwarded-For` acrescentado pelo proxy. Com a API pública, qualquer pessoa poderia mandar um `X-Forwarded-For` falso e burlar o limite.
 
