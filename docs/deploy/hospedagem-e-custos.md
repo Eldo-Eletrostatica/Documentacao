@@ -87,7 +87,7 @@ Antes de chegar à produção, toda mudança passa pela homologação (ver [ADR 
 
 O banco fica no Neon porque o PostgreSQL grátis do Render expira em 30 dias, e o do Neon não: o plano grátis tem 1 GB e 100 horas de computação por mês, e o banco suspende depois de 5 minutos sem uso. Como o Neon fica fora da rede privada do Render, a API conecta com SSL (`DB_SSL=true`).
 
-Valem os limites do plano grátis do Render descritos acima: o site e a API dormem, a API fica pública e os avisos por e-mail não saem. A suíte Selenium roda só na homologação, com o `E2E_CAPTCHA_TOKEN`, que não existe na produção.
+Valem os limites do plano grátis do Render descritos acima: o site e a API dormem, a API fica pública e os avisos por e-mail não saem. A suíte Selenium completa roda só na homologação, com o `E2E_CAPTCHA_TOKEN`, que não existe na produção; na produção roda só o fluxo `producao`, de leitura, à mão.
 
 ## Variáveis de produção
 

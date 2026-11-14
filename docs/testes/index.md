@@ -2,7 +2,7 @@
 
 A suíte Selenium do repositório `Frontend` (pasta `e2e/`) abre o Chrome e usa o site como uma pessoa usaria: o visitante pede orçamento, o funcionário lança a venda, o gestor exporta o relatório. Ela roda por **fluxo de interação**, uma jornada que pode passar por várias pessoas.
 
-A suíte roda no localhost ou na homologação, nunca na produção, porque cria contatos, vendas e funcionários de teste ([ADR 0009](../adr/0009-homologacao-antes-da-producao.md)).
+A suíte completa roda no localhost ou na homologação, porque cria contatos, vendas e funcionários de teste. Na produção roda só o fluxo `producao`, que não grava nada ([ADR 0009](../adr/0009-homologacao-antes-da-producao.md)).
 
 ## Fluxos
 
@@ -17,6 +17,7 @@ A suíte roda no localhost ou na homologação, nunca na produção, porque cria
 | `gestao` | Dashboard e exportação do período | US11, US12 | [Equipe](equipe.md#gestao) |
 | `administracao` | Login, funcionários, tabela de orçamento, identidade visual, portfólio e eventos | US08, US09, US10, US25, US26, US27 | [Administração](administracao.md) |
 | `fumaca` | Um teste de cada fluxo, para conferir um deploy em poucos minutos | | [abaixo](#checagem-rapida-fumaca) |
+| `producao` | Só leitura, para conferir a produção depois de uma promoção | | [Produção](producao.md) |
 
 Cada página de fluxo traz os comandos para rodar só aquele fluxo e o vídeo de uma execução na homologação. Os vídeos foram gravados em 13/11/2026, com a pausa padrão de 1 s entre os passos; os trechos sem o navegador aberto (acordar o site, salvar e restaurar o banco) foram cortados.
 
