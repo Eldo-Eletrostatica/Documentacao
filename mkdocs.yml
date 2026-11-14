@@ -55,6 +55,7 @@ nav:
       - Visitante: testes/visitante.md
       - Equipe: testes/equipe.md
       - Administração: testes/administracao.md
+      - Produção: testes/producao.md
   - Processo:
       - Quadro Kanban: processo/quadro-kanban.md
       - Critérios de Aceite: processo/criterios-aceite.md

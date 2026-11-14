@@ -14,5 +14,6 @@ Toda mudança passa pela homologação antes de chegar à produção ([ADR 0009]
 6. **Validação.** Alguém do grupo confere a mudança no site da homologação. Se o Selenium falhou, a mudança não é promovida: os prints ficam nos artefatos da execução, e a correção vira uma nova tarefa.
 7. **PR `main` → `producao`.** O PR de promoção leva a `main` inteira, com merge commit. Nenhum PR de tarefa vai direto para a `producao`.
 8. **Render publica a produção.** O `eldo-site` e a `eldo-api` publicam a `producao` depois que o CI passa.
+9. **Checagem da produção (à mão).** Quem promoveu roda o fluxo Selenium `producao`, só de leitura ([Produção](../testes/producao.md)).
 
 Os planos, os custos e as peças de cada ambiente estão em [Hospedagem e custos](hospedagem-e-custos.md).
